@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+body {
+  font-family: "Electrolize", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(129 99 255 / 18%);
+}
+
+header {
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+.circles {
+  position: absolute;
+  top: 18%;
+}
+
+.circle1 {
+  width: 400px;
+  height: 400px;
+  border-radius: 200px;
+  background-color: rgb(129 99 255 / 18%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  background-color: rgb(129 99 255 / 20%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background-color: rgb(129 99 255 / 22%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle4 {
+  width: 100px;
+  height: 100px;
+  border-radius: 200px;
+  background-color: rgb(129 99 255 / 24%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  position: absolute;
+  top: 36%;
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  margin: 0 10px;
+  border: none;
+  background-color: transparent;
+}
+
+button i {
+  font-size: 2rem;
+  padding: 10px;
+  width: 50px;
+}
+
+#play {
+  color: #44b97a;
+}
+
+#pause {
+  color: orange;
+}
+
+#reset {
+  color: #fe5657;
+}
+
+#lap {
+  color: #8163ff;
+}
+
+.laps {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 10px;
+  max-width: 90%;
+}
+
+.laps .control-buttons {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.laps #laps {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+.lap-item {
+  background-color: rgba(129 99 255 / 15%);
+  border-radius: 15px;
+  padding: 5px 25px 5px 15px;
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .timer {
+    top: 39%;
+  }
+}
